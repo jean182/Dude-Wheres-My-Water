@@ -1,11 +1,12 @@
 {
-  "name": "dude-wheres-my-water",
+  "name": "DudeWheresMyWater",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "lint": "eslint '**/*.{js,jsx}'",
+    "storybook": "storybook start",
     "precommit": "lint-staged"
   },
   "lint-staged": {
@@ -15,12 +16,19 @@
     ]
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "16.8.3",
-    "react-native": "0.59.4"
+    "react-native": "0.59.4",
+    "react-native-dev-menu": "^2.0.2",
+    "react-native-elements": "^1.1.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/runtime": "^7.4.3",
+    "@storybook/react-native": "^4.1.14",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.7.1",
     "eslint": "^5.16.0",
